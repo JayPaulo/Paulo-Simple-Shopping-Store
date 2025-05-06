@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Shopping Store</h1>
+        <div class="cart">
+            <span> Cart (0)</span>
+        </div>
+    </header>
+    
+    <main>
+        <section class="products">
+            <div class="product">
+                <h2>Product 1</h2>
+                <img src="src/Air Jordan 1.webp" alt="">
+                <p>Price: Php 5000.00</p>
+                <button onclick="addToCart('Product 1',5000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h2>Product 2</h2>
+               <img src="src/AquaFlask.jpg" alt="">
+                <p>Price: Php 1000.00</p>
+                <button onclick="addToCart('Product 2',1000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h2>Product 3</h2>
+                <img src="src/polo.jpg" alt="">
+                <p>Price: Php 350.00</p>
+                <button onclick="addToCart('Product 3',350)">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="cart-details">
+            <h2>Your Order</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: Php 0.00</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
